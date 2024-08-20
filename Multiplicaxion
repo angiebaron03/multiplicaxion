@@ -1,0 +1,28 @@
+package com.mycompany.multiplicaxion;
+import java.util.Scanner;
+/**
+ *
+ * @author ANGIE  BARON
+ */
+public class Multiplicaxion {
+
+    public static void main(String[] args) {
+        Scanner ayd = new Scanner (System.in);
+       
+    System.out.print("Ingresa el primer número: ");
+        int num1 = ayd.nextInt();
+        
+        System.out.print("Ingresa el segundo número: ");
+        int num2 = ayd.nextInt();
+        
+        int suma = operaciones.sumar(num1, num2);
+        int resta = operaciones.restar(num1, num2);
+        int multiplicacion = operaciones.multiplicar(num1, num2);
+        
+        System.out.println("La suma de los números es: " + suma);
+        System.out.println("La resta de los números es: " + resta);
+        System.out.println("La multiplicación de los números es: " + multiplicacion);
+        
+        ayd.close();
+    }
+}
